@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta content="telephone=no" name="format-detection" />
+	<meta content="email=no" name="format-detection" />
+	<meta name="full-screen" content="yes">
+	<meta name="browsermode" content="application">
+	<meta name="x5-orientation" content="portrait">
+	<meta name="x5-fullscreen" content="true">
+	<meta name="x5-page-mode" content="app">
+	<title>Document</title>
+	<script>
+		;(function(doc,win){var docEl = doc.documentElement,resizeEvt = 'orientationchange' in window ? 'orientationchange':'resize',recalc = function(){var clientWidth = docEl.clientWidth;if(!clientWidth) return;docEl.style.fontSize = 20 *(clientWidth / 320)+'px'};recalc();var tid;if(!doc.addEventListener) return;win.addEventListener(resizeEvt,function(){clearTimeout(tid);tid = setTimeout(recalc,300)},false)})(document,window);
+	</script>
+    <link rel="stylesheet" href="../css/main.css?55" type="text/css"/>
+    <link rel="stylesheet" href="../css/css.css" type="text/css"/>
+</head>
+<body>
+	<div class="main">
+		<div class="head">
+			<a href="question.html"><img src="../images/arr.png"></a>
+			<span>知识点专项练习</span>
+			<img src="../images/l.png">
+		</div>
+		<div class="ex">
+			<ul>
+				<li><p>已练习天数</p><span>1</span></li>
+				<li><p>已练习题目</p><span>10</span></li>
+				<li><p>平均分</p><span>50</span></li>
+			</ul>
+		</div>
+		<div class="menu-list">
+			<ul>
+				<li>
+					<p>编程语言</p>
+					<div class="wrap">
+						<div class="lists">
+							<p>java</p><span class="exer">练习</span>
+							<div class="question-type">
+								<span>共939题</span> | <span>已练习10题</span> | <span>正确率50%</span>
+							</div>
+						</div>
+						<div class="lists">
+							<p>java</p><span class="exer">练习</span>
+							<div class="question-type">
+								<span>共939题</span> | <span>已练习10题</span> | <span>正确率50%</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<p>数据结构</p>
+					<div class="wrap">
+						<div class="lists">
+							<p>java</p><span class="exer">练习</span>
+							<div class="question-type">
+								<span>共939题</span> | <span>已练习10题</span> | <span>正确率50%</span>
+							</div>
+						</div>
+						<div class="lists">
+							<p>java</p><span class="exer">练习</span>
+							<div class="question-type">
+								<span>共939题</span> | <span>已练习10题</span> | <span>正确率50%</span>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="../js/common.js"></script>
+	<!-- 加载zepto.js -->
+	<script src="http://cdn.staticfile.org/zepto/1.0rc1/zepto.min.js"></script>
+	<script>window.Zepto || document.write('<scri'+'pt src="js/zepto.min.js"></scri'+'pt>')</script>
+	<script>
+		$.ajax({
+		  type: 'POST',
+		  url: JsBaseurltest+"/subjecttype/selectByProperty",
+		  data: {ttype:0},
+		  dataType: "json",
+		  success: function(e){
+	        console.log(e)
+	      } 
+		});
+		$(".menu-list li > p").click(function(){
+			$(this).toggleClass('on');
+			$(this).next().toggle()
+		})
+	</script>
+</body>
+</html>

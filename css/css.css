@@ -1,0 +1,118 @@
+.head {
+  background: #3d444d none repeat scroll 0 0;
+  padding: 0.5em 0;
+}
+.head a {
+  display: inline-block;
+}
+.head > span {
+  color: white;
+  font-size: 0.8em;
+  position: relative;
+  top: -4px;
+}
+.head > img {
+  position: absolute;
+  right: 1em;
+  width: 10%;
+}
+.ex {
+  background: #3d444d none repeat scroll 0 0;
+  color: white;
+  font-size: 0.7em;
+  text-align: center;
+}
+.ex li {
+  display: inline-block;
+  margin: 1em 0;
+  width: 32.4%;
+}
+.ex span {
+  color: #08b292;
+  display: inline-block;
+  margin-top: 0.2em;
+}
+.menu-list {
+  font-size: 0.7em;
+  padding: 20px;
+}
+.menu-list li {
+  margin: 15px 0;
+}
+.menu-list li > p {
+  background: url("../images/down.png") no-repeat scroll 0 0 / 16px auto;
+  padding-left: 30px;
+}
+.menu-list li > p.on {
+  background: url("../images/up.png") no-repeat scroll 0 0 / 16px auto;
+}
+.lists {
+  position: relative;
+  background: url("../images/line.png") no-repeat scroll 0 0 / 16px auto;
+  padding-left: 30px;
+}
+.exer {
+  color: #08b292;
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+.lists > p {
+  padding-top: 50px;
+}
+.wrap{display: none}
+.head i {
+  color: #08b292;
+  font-size: 0.65em;
+  font-style: normal;
+  position: absolute;
+  right: 10px;
+  top: 13px;
+  background: url("../images/z.png") no-repeat scroll 0 0 / 16px auto;
+  padding-left: 25px;
+}
+.ques-bar {
+  background: #eee none repeat scroll 0 0;
+  overflow: hidden;
+  padding: 10px;
+}
+.ques-bar > span {
+  float: left;
+  font-size: 0.8em;
+}
+.process {
+  color: #08b292;
+  float: right;
+  font-size: 0.8em;
+}
+.question-content {
+  font-size: 0.8em;
+  padding: 10px 10px 0 20px;
+}
+.question-content span {
+  color: #08b292;
+}
+.question-list {
+  margin-top: 15%;
+}
+.question-list > p {
+  margin-top: 20px;
+}
+.question-list > p.on {
+  color: #08b292
+}
+.foot {
+  background: #3d444d none repeat scroll 0 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+.foot > a {
+  color: #08b292;
+  display: inline-block;
+  font-size: 0.8em;
+  padding: 10px 0;
+  width: 50%;
+}
